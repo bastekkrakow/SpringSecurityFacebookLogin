@@ -1,4 +1,4 @@
-package akademiakodu.ormtest.models;
+package splon.facebooklogin.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,9 +15,6 @@ public class UserModel {
     private int id;
     private String login;
     private String password;
-    //@Column(name= "jakaś kolumna z bazy danych")
-    private int age;
-
-
-
+    @Column(name = "user_type")
+    private String userType;
 }
